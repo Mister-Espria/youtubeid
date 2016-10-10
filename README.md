@@ -53,6 +53,11 @@ crontab example:
 
 ## Additional info: Send latest video from channel to Kodi using Home-Assitant
 First you need to make sure you have the youtube addon installed in Kodi.
+
+Also make sure that you have the webserver in Kodi enabled. Go to -->Settings → Services → Webserver → Allow control of Kodi via HTTP
+
+I have also set an username and password.
+
 For this we need to install kodi-cli by `git clone https://github.com/nawar/kodi-cli`
 Thanks to nawar for this awesome code!
 
