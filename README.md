@@ -40,7 +40,7 @@ I think it should be easy to add multiple channels to the .php file but i don't 
 But you can just copy it and change the name of the file and the channel id. and use another file as output.
 
 **Add crontab**
-I did setup crontab to execute the command. If a youtuber has a fixed upload time you can let the command execute arround that time. You can also just let it run every hour or anything you want. It wil just overwrite the existing file. 
+I did setup crontab to execute the command. If a youtuber has a fixed upload time you can let the command execute arround that time. You can also just let it run every hour or anything you want. It wil just overwrite the existing file. [more info on crontab] (https://www.raspberrypi.org/documentation/linux/usage/cron.md)
 
 crontab example:
 ```
@@ -77,3 +77,5 @@ watch_youtuber1:
 ```
 Now you can activate the script and the Youtube video will play on your Kodi media player.
 Enjoy!!!
+
+I did found the base of the .php file [here] (http://stackoverflow.com/questions/6617567/how-to-get-the-id-of-the-latest-uploaded-video-in-a-youtube-channel)
