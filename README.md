@@ -30,8 +30,8 @@ Simply run the code by:  `php -f get_youtube_videoid.php`
 This will return my hardcoded path + the latest video ID from the given channel in the terminal.
 
 If you want to store it change to command like this:
-**`php -f get_youtube_videoid.php >./youtubeid/anynameyouchoose.txt`**
-This will save the result in **anynameyouchoose.txt** in `/home/pi/youtubeid/`
+**`php -f get_youtube_videoid.php >./youtubeid/youtuber1.txt`**
+This will save the result in **youtuber1.txt** in `/home/pi/youtubeid/`
 But you need to make sure there is a folder in` /home/pi `which is called **youtubeid** in this case.
 
 **Multiple Youtube channels**
@@ -51,6 +51,7 @@ crontab example:
 
 
 ## Additional info: Send latest video from channel to Kodi using Home-Assitant
+First you need to make sure you have the youtube addon installed in Kodi.
 For this we need to install kodi-cli by `git clone https://github.com/nawar/kodi-cli`
 Thanks to nawar for this awesome code!
 
@@ -58,4 +59,21 @@ Navigate to `/home/pi/kodi-cli/kodi-cli` and edit lines 18 to 21 to match your s
 
 Now you can send a youtube video with this command: **`/home/pi/kodi-cli/kodi-cli  -y FILLHEREVIDEOID`**
 
+**Home Assitant**
 
+I added to my configuration.yaml the next shell command:
+```
+shell_command:
+  play_youtuber1: 'sh /home/pi/youtubeid/youtuber1.txt'
+  play_youtuber2: 'sh /home/pi/youtubeid/youtuber2.txt'
+  play_youtuber3: 'sh /home/pi/youtubeid/youtuber3.txt
+
+```
+Then i created for every channel a script:
+```
+watch_youtuber1:
+  sequence:
+   - service: shell_command.play_youtuber1
+```
+Now you can activate the script and the Youtube video will play on your Kodi media player.
+Enjoy!!!
