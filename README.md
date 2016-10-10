@@ -34,3 +34,28 @@ If you want to store it change to command like this:
 This will save the result in **anynameyouchoose.txt** in `/home/pi/youtubeid/`
 But you need to make sure there is a folder in` /home/pi `which is called **youtubeid** in this case.
 
+**Multiple Youtube channels**
+
+I think it should be easy to add multiple channels to the .php file but i don't know how to implement it.
+But you can just copy it and change the name of the file and the channel id. and use another file as output.
+
+**Add crontab**
+I did setup crontab to execute the command. If a youtuber has a fixed upload time you can let the command execute arround that time. You can also just let it run every hour or anything you want. It wil just overwrite the existing file. 
+
+crontab example:
+```
+3,10,31 16-17 * * * php -f get_youtube_videoid.php >./youtubeid/youtuber1.txt
+3,10,31,50 21-22 * * * php -f get_youtube_youtuber2.php >./youtubeid/youtuber2.txt
+10,50 16-23 * * * php -f get_youtube_youtuber3.php >./youtubeid/youtuber3.txt
+```
+
+
+## Additional info: Send latest video from channel to Kodi using Home-Assitant
+For this we need to install kodi-cli by `git clone https://github.com/nawar/kodi-cli`
+Thanks to nawar for this awesome code!
+
+Navigate to `/home/pi/kodi-cli/kodi-cli` and edit lines 18 to 21 to match your setup (KODI_HOST etc.).
+
+Now you can send a youtube video with this command: **`/home/pi/kodi-cli/kodi-cli  -y FILLHEREVIDEOID`**
+
+
