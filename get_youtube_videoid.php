@@ -11,6 +11,6 @@ $id = $listFromYouTube->items[0]->id->videoId; #if you change the zero to a 1 yo
 #remove hashtag in line below and add hashtags to line 14,15 and 16 to get only video ID in output 
 #echo $id; // Outputs the video ID. */  
 
-$basecom = "/home/pi/kodi-cli/kodi-cli  -y"; /* change /home/pi/kodi-cli/kodi-cli  -y to https://www.youtube.com/watch?v= if you only want the link to the video */
-$result = "{$basecom} {$id}";
+$basecom = "/home/pi/kodi-cli/kodi-cli -y https://www.youtube.com/watch?v="; /* change /home/pi/kodi-cli/kodi-cli -y https://www.youtube.com/watch?v= to https://www.youtube.com/watch?v= if you only want the link to the video */
+$result = "{$basecom}{$id}";
 echo $result; 
