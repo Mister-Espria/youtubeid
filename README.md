@@ -80,3 +80,6 @@ Now you can activate the script and the Youtube video will play on your Kodi med
 Enjoy!!!
 
 I did found the base of the .php file [here] (http://stackoverflow.com/questions/6617567/how-to-get-the-id-of-the-latest-uploaded-video-in-a-youtube-channel)
+
+###Problems
+In case some command does not fire. Check Permissions on the folders and files. All the folders i used i gave all permissions but i don't know if it is mandatory.
