@@ -29,7 +29,7 @@ Simply run the code by:  `php -f get_youtube_videoid.php`
 
 This will return my hardcoded path + the latest video ID from the given channel in the terminal.
 
-If you want to store it change to command like this:
+If you want to store it change the command like this:
 **`php -f get_youtube_videoid.php >./youtubeid/youtuber1.txt`**
 This will save the result in **youtuber1.txt** in `/home/pi/youtubeid/`
 But you need to make sure there is a folder in` /home/pi `which is called **youtubeid** in this case.
