@@ -13,7 +13,7 @@ php script that retrieves VideoId from youtube for latest video from a specific 
 ##Installation
 1. Download the .zip file and place the .php file in /home/pi/
 
-  Or use: `git clone https://github.com/Mister-Espria/youtubeid.git
+  Or use: `git clone https://github.com/Mister-Espria/youtubeid.git`
 
   When using git transfer `get_youtube_videoid.php` to `/home/pi/`
 
@@ -30,7 +30,7 @@ Simply run the code by:  `php -f get_youtube_videoid.php`
 This will return my hardcoded path + the latest video ID from the given channel in the terminal.
 
 If you want to store it change to command like this:
-`php -f get_youtube_videoid.php >./youtubeid/anynameyouchoose.txt`
+**`php -f get_youtube_videoid.php >./youtubeid/anynameyouchoose.txt`**
 This will save the result in **anynameyouchoose.txt** in `/home/pi/youtubeid/`
 But you need to make sure there is a folder in` /home/pi `which is called **youtubeid** in this case.
 
