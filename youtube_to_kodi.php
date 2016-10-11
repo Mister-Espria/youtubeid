@@ -12,7 +12,7 @@ $json = file_get_contents($json_url);
 $listFromYouTube=json_decode($json);
 $id = $listFromYouTube->items[$latest]->id->videoId;
 
-$basecom = "/home/pi/kodi-cli/kodi-cli2 -y https://www.youtube.com/watch?v="; /* change /home/pi/kodi-cli/kodi-cli -y https://www.youtube.com/watch?v= to https://www.youtube.com/watch?v= if you only want the link to the video */
+$basecom = "/home/pi/kodi-cli/kodi-cli2 -y https://www.youtube.com/watch?v="; 
 $result = "{$basecom}{$id} {$host} {$port}";
 
 shell_exec($result);
