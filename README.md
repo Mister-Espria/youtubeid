@@ -1,5 +1,6 @@
 Readme below not update yet.
 To run this script you need the forked kodi-cli2 script in the same place as your kodi-cli script.
+And Add your Youtube Data Api Key again to youtube_to_kodi.php
 
 Then you can use this command to send the video to Kodi:
 
