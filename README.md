@@ -7,7 +7,7 @@ Then you can use this command to send the video to Kodi:
 `php -f /path/to/youtube_to_kodi.php CHANNELID KODIHOSTIP KODIHOSTPORT NUMBEROFVIDEO (0 for latest video, 1 for second latest and so on till 4) y (for direct play) or q (for adding to queue)`
 
 For example:
-`php -f /home/pi/youtube_to_kodi.php UCOmcA3f_RrH6b9NmcNa4tdg 192.168.1.8 8080 0 y`
+**`php -f /home/pi/youtube_to_kodi.php UCOmcA3f_RrH6b9NmcNa4tdg 192.168.1.8 8080 0 y`**
 
 # youtubeid
 php script that retrieves VideoId from youtube for latest video from a specific channel
